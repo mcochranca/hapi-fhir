@@ -193,7 +193,7 @@
 			<organization>University Health Network</organization>
 		</developer>
 		<developer>
-			<id></id>
+			<id/>
 			<name>Lisa Wong</name>
 			<organization>University Health Network</organization>
 		</developer>
@@ -1000,7 +1000,7 @@
 		<okhttp_version>4.12.0</okhttp_version>
 		<otel.version>1.38.0</otel.version> <!-- BOM Version -->
 		<otel_instrumentation.version>2.4.0</otel_instrumentation.version>
-		<poi_version>4.1.2</poi_version>
+		<poi_version>5.5.0</poi_version>
 		<poi_ooxml_schemas_version>1.4</poi_ooxml_schemas_version>
 		<resteasy_version>6.2.9.Final</resteasy_version>
 		<ph_schematron_version>7.1.2</ph_schematron_version>
@@ -1042,7 +1042,7 @@
 		<maven_checkstyle_version>3.3.1</maven_checkstyle_version>
 
 		<!-- Jacoco -->
-		<argLine></argLine>
+		<argLine/>
 	</properties>
 
 	<dependencyManagement>
@@ -2347,7 +2347,7 @@
 								<spacesPerTab>4</spacesPerTab>
 							</indent>
 							<!--Just removes unused imports-->
-							<removeUnusedImports />
+							<removeUnusedImports/>
 							<!--Follow the editorconfig-defined order of imports-->
 							<importOrder>
 								<wildcardsLast>true</wildcardsLast>
@@ -2632,7 +2632,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore/>
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -2651,7 +2651,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore/>
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
@@ -2882,7 +2882,7 @@
 								</replace>
 								<echo>Adding Syntax Highlighter</echo>
 								<replace dir="target/site" summary="true">
-									<include name="*.html"></include>
+									<include name="*.html"/>
 									<replacetoken><![CDATA[</body>]]></replacetoken>
 									<replacevalue><![CDATA[
 <script type="text/javascript">
@@ -2924,7 +2924,7 @@
 							<target>
 								<echo>Adding Google analytics in target/site for &lt;body&gt;</echo>
 								<replace dir="target/site" summary="true">
-									<include name="**/*.html"></include>
+									<include name="**/*.html"/>
 									<!--suppress UnresolvedMavenProperty -->
 									<replacefilter token="#build#" value="${label}"/>
 									<replacefilter token="#version#" value="${project.version}"/>
@@ -2947,7 +2947,7 @@
 								</replace>
 								<echo>Adding Google analytics in target/site for &lt;BODY&gt;</echo>
 								<replace dir="target/site" summary="true">
-									<include name="**/*.html"></include>
+									<include name="**/*.html"/>
 									<replacetoken><![CDATA[</BODY>]]></replacetoken>
 									<replacevalue><![CDATA[
 <script>
